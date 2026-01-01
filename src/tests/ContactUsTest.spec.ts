@@ -13,5 +13,6 @@ for (const data of testData) {
         await home.enterContactUsDetails(data.Category, data.Product, data.Email, data.Subject);
         await home.sendMessage();
         await home.verifySuccessMessage(data.Message);
+
     });
 }
